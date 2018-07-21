@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin_card_medium"
+    app:cardElevation="@dimen/margin_small"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_full">
+
+        <TextView
+            android:id="@+id/tv_news_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_card_medium_2"
+            android:layout_marginRight="@dimen/margin_card_medium_2"
+            android:layout_marginTop="@dimen/margin_card_medium_2"
+            android:text="@string/dummy_news_text"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <ImageView
+            android:id="@+id/iv_news_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_news_date"
+            android:layout_marginLeft="@dimen/margin_card_medium_2"
+            android:layout_marginRight="@dimen/margin_card_medium_2"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_dummy_news" />
+
+        <TextView
+            android:id="@+id/tv_news_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_news_header"
+            android:layout_marginLeft="@dimen/margin_card_medium_2"
+            android:text="@string/news_date"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/tv_news_info_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_news_image"
+            android:layout_marginLeft="@dimen/margin_card_medium_2"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:background="@drawable/border_textview"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:text="@string/info_type"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_news_info_type"
+            android:layout_marginLeft="@dimen/margin_card_medium_2"
+            android:layout_marginRight="@dimen/margin_card_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:lineSpacingMultiplier="1.3"
+            android:textColor="@color/primary_text"
+            android:text="@string/news_detail"
+            android:layout_marginBottom="@dimen/margin_card_medium_2"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
